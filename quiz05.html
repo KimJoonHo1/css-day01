@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;  
+        }
+        #warp {
+            width: 768px;
+        }
+        .head {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+        }
+        .head-text {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav {
+            background-color: gray;
+            height: 50px;
+        }
+        .menu {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav:nth-of-type(1) {
+            padding-left: 75px;
+        }
+        .nav:nth-of-type(2) {
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="head">
+                <img src="resources/images/맛집.png" width="100px" style="box-shadow: 10px 10px 15px black; position: absolute; top: 0; left: 0;">
+                <div class="head-text"><i>맛집탕방 이야기^^</i></div>
+            </div>
+            <nav class="nav">
+                <span><a href="#" class="menu">HOME</a></span>
+                <span><a href="#" class="menu">게시판</a></span>
+                <span><a href="#" class="menu">내정보</a></span>
+            </nav>
+        </header>
+
+        <section>
+        </section>
+        
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .nav {
+            width: 100%;
+            background-color: pink;
+            display: flex;
+            justify-content: end;
+        }
+        .nav>div {
+            background-color: red;
+            color: white;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            border-right: 5px solid white;
+            padding: 0 10px;
+        }
+        .nav>div:last-child {
+            border-right: none;
+        }
+        .banne {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .box {
+            border-top: 1px solid black;
+        }
+        .quiz {
+            padding-bottom: 15px;
+        }
+        .cowhite {
+            color: white;
+        }
+        .check:active + label { background-color: gray; }
+        .border-bt {
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <div>1번 문제로 이동</div>
+            <div>2번 문제로 이동</div>
+            <div>3번 문제로 이동</div>
+            <div>4번 문제로 이동</div>
+        </div>
+        <div class="banne">
+            <img src="resources/images/quiz.png">
+        </div>
+        <div class="box">
+            <h2>정답 확인 클릭시 정답 보여짐</h2>
+        </div>
+        <div class="box quiz">
+            <h2 style="color: green;">문제 1) 정적 언어는?</h2>
+            <span>정답 작성</span>
+            <input type="text">
+            <span class="check">정답 클릭 확인</span>
+            <label class="cowhite">html, javascript, css 등</label>
+        </div>
+        <div class="box quiz">
+            <h2 style="color: green;">문제 2) 서버 사이드 언어는?</h2>
+            <span>정답 작성</span>
+            <input type="text">
+            <span class="check">정답 클릭 확인</span>
+            <label class="cowhite">jsp, django, php 등</label>
+        </div>
+        <div class="box quiz">
+            <h2 style="color: green;">문제 3) 프로그래밍 언어는?</h2>
+            <span>정답 작성</span>
+            <input type="text">
+            <span class="check">정답 클릭 확인</span>
+            <label class="cowhite">java, c, python 등</label>
+        </div>
+        <div class="box quiz border-bt">
+            <h2 style="color: green;">문제 4) 클라이언트 사이드 언어는?</h2>
+            <span>정답 작성</span>
+            <input type="text">
+            <span class="check">정답 클릭 확인</span>
+            <label class="cowhite">html, javascript, css 등</label>
+        </div>
+    </div>
+</body>
+</html>
