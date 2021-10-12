@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .sp {
+        background-color: cyan;
+        width: 400px;
+        height: 50px;
+    }
+    .rp1 {
+        position: fixed;
+        right: 30px;
+        top: 10px;
+        background-color: orange;
+        width: 400px;
+        height: 500px;
+        z-index: 1;
+    }
+    .rp2 {
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        background-color: lightgreen;
+        width: 400px;
+        height: 500px;
+        z-index: 1;
+    }
+    h1 {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+<body>
+    <h1>위치지정 2 <a href="#">클릭해 주세요 !</a></h1>
+    <p class="sp">정적위치 설정</p>
+    <p class="sp">정적위치 설정</p>
+    <p class="sp">정적위치 설정</p>
+    <div class="rp1">고정위치설정(fiexd) - right30p, top 10px</div>
+    <div class="rp2">절대위치설정(absolute) - right 60px, top 20px</div>
+</body>
+</html>
